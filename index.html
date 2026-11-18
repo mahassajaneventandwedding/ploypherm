@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ploy &amp; Pherm · Wedding Guest Guide by Mahassajan</title>
+<meta name="description" content="Ploy & Pherm · The Wedding Celebration · 19 November 2026 · The Ritz-Carlton, Bangkok — ค้นหาที่นั่งของคุณ">
+<meta property="og:title" content="Ploy & Pherm · The Wedding Celebration">
+<meta property="og:description" content="19 November 2026 · The Ritz-Carlton, Bangkok · ค้นหาที่นั่งของคุณ">
+<meta property="og:image" content="https://mahassajaneventandwedding.github.io/ploypherm/img/hero.jpg">
+<meta name="theme-color" content="#C9A8AF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&family=Pinyon+Script&family=Prompt:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mauve:#C9A8AF;--mauve-deep:#9C7880;--plum:#5C4148;--ink:#4A3A3E;--muted:#8A7A7E;
+  --ivory:#FBF8F6;--blush:#F4EBEC;--line:#E8DADD;
+  --terra:#C8734A;      /* your-seat / entrance marker */
+  --sand:#EADCC8;       /* soft champagne accent from the couple's photos */
+  --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Prompt',sans-serif;font-weight:300;color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased;line-height:1.6}
+img{display:block;max-width:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.eyebrow{font-family:'Josefin Sans',sans-serif;font-weight:300;letter-spacing:.32em;text-transform:uppercase;font-size:12px}
+
+.demo{background:var(--plum);color:#fff;text-align:center;font-size:12.5px;padding:7px 12px;letter-spacing:.02em}
+.demo b{font-family:'Josefin Sans';font-weight:600;letter-spacing:.2em;margin-right:6px}
+
+.topbar{display:flex;align-items:center;justify-content:center;gap:12px;padding:16px 20px;background:var(--ivory);border-bottom:1px solid var(--line)}
+.topbar img{height:26px}
+.topbar span{font-size:10px;color:var(--mauve-deep)}
+
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;justify-content:center;color:#fff;text-align:center;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,65,72,.04) 0%,rgba(92,65,72,.10) 38%,rgba(110,78,86,.80) 76%,rgba(92,65,72,.95) 100%)}
+.hero-in{position:relative;z-index:1;padding:0 20px 56px;max-width:640px}
+.hero .eyebrow{color:#fff;opacity:.92}
+.hero h1{font-family:'Pinyon Script',cursive;font-weight:400;font-size:clamp(64px,15vw,112px);line-height:1;margin:14px 0 4px;text-shadow:0 2px 24px rgba(60,40,45,.35)}
+.hero h1 .amp{font-size:.6em;color:var(--sand);padding:0 .08em}
+.hero .th-nick{font-size:16px;opacity:.95;letter-spacing:.02em}
+.hero .names{font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:.06em;opacity:.95;margin-top:4px}
+.hero .rule{width:64px;height:1px;background:rgba(255,255,255,.6);margin:20px auto}
+.hero .when{font-family:'Josefin Sans';font-weight:400;letter-spacing:.28em;font-size:13px;text-transform:uppercase}
+.hero .when-th{font-size:14px;opacity:.92;margin-top:4px}
+.hero .where{font-size:14px;opacity:.9;margin-top:6px}
+.countdown{display:flex;justify-content:center;gap:10px;margin-top:26px}
+.cd{min-width:74px;padding:12px 8px 10px;border-radius:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.cd b{display:block;font-family:'Josefin Sans',sans-serif;font-weight:300;font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums}
+.cd span{display:block;font-size:12px;opacity:.95;margin-top:2px}
+.cd small{display:block;font-family:'Josefin Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;font-size:9px;opacity:.75}
+.cd-cap{font-family:'Josefin Sans';letter-spacing:.22em;text-transform:uppercase;font-size:10px;opacity:.8;margin-top:12px}
+.cd-done{display:none;margin-top:26px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px}
+@media (max-width:400px){.cd{min-width:64px}.cd b{font-size:28px}}
+.hero .cta{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:#fff;color:var(--plum);text-decoration:none;padding:14px 28px;border-radius:999px;font-weight:400;font-size:15px;box-shadow:0 8px 30px rgba(60,40,45,.25)}
+.hero .cta svg{width:16px;height:16px}
+
+section{padding:64px 0}
+.sec-head{text-align:center;margin-bottom:28px}
+.sec-head .eyebrow{color:var(--mauve-deep)}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:38px;color:var(--plum);line-height:1.15;margin-top:6px}
+.sec-head p{color:var(--muted);font-size:14.5px;margin-top:8px}
+.sec-head p.en{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;margin-top:2px}
+.heart-div{width:30px;margin:0 auto 14px;opacity:.9}
+
+/* finder */
+#finder{background:linear-gradient(180deg,var(--blush),var(--ivory))}
+.search{position:relative}
+.search input{width:100%;font-family:'Prompt';font-weight:300;font-size:18px;color:var(--ink);padding:18px 52px 18px 54px;border-radius:999px;border:1.5px solid var(--line);background:#fff;outline:none;transition:border-color .2s, box-shadow .2s;box-shadow:0 6px 24px rgba(156,120,128,.10);-webkit-appearance:none}
+.search input:focus{border-color:var(--mauve);box-shadow:0 0 0 5px rgba(201,168,175,.25)}
+.search input::placeholder{color:#B9AAAD}
+.search input::-webkit-search-cancel-button{display:none}
+.search .ico{position:absolute;left:20px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--mauve-deep)}
+.search .clear{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:0;background:var(--blush);color:var(--plum);font-size:16px;cursor:pointer;display:none}
+.hint{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+.matches{list-style:none;margin-top:14px;display:grid;gap:8px}
+.matches li button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 18px;font-family:'Prompt';font-weight:300;font-size:16px;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
+.matches li button:hover{background:var(--blush);border-color:var(--mauve)}
+.matches .tag{font-family:'Josefin Sans';font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mauve-deep);white-space:nowrap}
+.matches .sub{display:block;font-size:12.5px;color:var(--muted)}
+.more{text-align:center;font-size:12.5px;color:var(--muted);margin-top:6px}
+.empty{text-align:center;color:var(--muted);font-size:14px;margin-top:16px;background:#fff;border:1px dashed var(--line);border-radius:16px;padding:16px}
+
+.result{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px 22px;box-shadow:0 14px 40px rgba(156,120,128,.12);display:none;animation:rise .35s ease;scroll-margin-top:12px}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.result .who{text-align:center}
+.result .who .eyebrow{color:var(--mauve-deep);font-size:11px}
+.result .who h3{font-weight:400;font-size:26px;color:var(--plum);margin-top:4px;line-height:1.35}
+.chips{display:flex;justify-content:center;gap:12px;margin:18px 0 10px}
+.chip{min-width:118px;border-radius:18px;padding:12px 18px;text-align:center}
+.chip small{display:block;font-family:'Josefin Sans';letter-spacing:.24em;text-transform:uppercase;font-size:10.5px;opacity:.85}
+.chip strong{display:block;font-family:'Josefin Sans';font-weight:400;font-size:34px;line-height:1.15;letter-spacing:.04em}
+.chip.t{background:var(--plum);color:#fff}
+.chip.s{background:var(--mauve);color:#fff}
+.tname{text-align:center;color:var(--plum);font-size:15.5px;font-weight:400;margin-bottom:2px}
+.kid-tag{font-style:normal;font-size:11px;background:#F6EADB;color:#9A5A34;border-radius:999px;padding:1px 8px;margin-left:4px;vertical-align:2px}
+.mates li.me .kid-tag{background:#fff}
+.seat-desc{text-align:center;color:var(--muted);font-size:14px}
+.staff-note{display:none;margin-top:12px;background:#FFF6EF;border:1px solid #F1D9C6;color:#8A4D2C;border-radius:12px;padding:10px 14px;font-size:13.5px}
+.tabs{display:flex;background:var(--blush);border-radius:999px;padding:4px;margin:20px 0 16px}
+.tabs button{flex:1;border:0;background:transparent;border-radius:999px;padding:10px 6px;font-family:'Prompt';font-size:14.5px;color:var(--plum);cursor:pointer;font-weight:300}
+.tabs button.on{background:#fff;box-shadow:0 2px 10px rgba(92,65,72,.12);font-weight:400}
+.tabs button small{display:block;font-size:11.5px;color:var(--muted)}
+
+.plan-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:16px;border:1px solid var(--line);background:#FDFBFA}
+.plan-scroll svg{display:block;min-width:900px;width:100%;height:auto}
+.plan-hint{font-size:12px;color:var(--muted);text-align:center;margin-top:8px}
+.legend{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-size:12px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+
+.mates{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.mates li small{color:var(--muted);font-size:11px}
+.mates li{background:var(--ivory);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:14px;display:flex;gap:10px;align-items:center;word-break:break-word}
+.mates li b{font-family:'Josefin Sans';font-weight:400;font-size:12px;color:#fff;background:var(--mauve);border-radius:50%;width:24px;height:24px;display:grid;place-items:center;flex:none}
+.mates li.me{background:var(--plum);color:#fff;border-color:var(--plum)}
+.mates li.me b{background:#fff;color:var(--plum)}
+.mates li.vacant{color:#C2B4B7;border-style:dashed}
+
+/* SVG plan */
+.room{fill:#fff;stroke:#CDBDC1;stroke-width:2}
+.foyer{fill:#FAF5F3;stroke:#DCCDD0;stroke-width:1.4}
+.lbl{font-family:'Josefin Sans';font-size:9px;letter-spacing:.12em;fill:var(--muted);text-transform:uppercase}
+.lbl-th{font-family:'Prompt';font-size:8.5px;fill:var(--muted)}
+.tb{fill:#EFE4E6;stroke:#D8C6CA;stroke-width:1}
+.tb-name{font-family:'Josefin Sans';font-size:9px;font-weight:600;fill:var(--plum);text-anchor:middle;dominant-baseline:central}
+.ch{fill:#fff;stroke:#CDB8BD;stroke-width:.9}
+.ch.taken{fill:#E2CDD2;stroke:#CDB0B7}
+.ch.kid{fill:#F3D9C4;stroke:#D9A986}
+.tg.dim{opacity:.33}
+.tg.hl .tb{fill:var(--plum);stroke:var(--plum)}
+.tg.hl .tb-name.in{fill:#fff}
+.tg.hl .ch.kid{fill:#F3D9C4;stroke:#C8734A}
+.tg.hl .ch.taken{fill:var(--mauve);stroke:var(--mauve-deep)}
+.ring{fill:none;stroke:var(--mauve-deep);stroke-width:1.3;stroke-dasharray:4 3}
+.me-seat{fill:var(--terra);stroke:#fff;stroke-width:1.3}
+.pulse{fill:none;stroke:var(--terra);stroke-width:1.5;animation:pulse 1.6s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+.here{fill:var(--terra)}
+
+/* welcome / invitation */
+.invite{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.mono{padding:38px 20px 8px;text-align:center}
+.mono .m{display:inline-grid;place-items:center;width:112px;height:112px;border-radius:50%;border:1px solid var(--mauve);position:relative}
+.mono .m::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1px solid var(--line)}
+.mono .m span{font-family:'Pinyon Script',cursive;font-size:46px;color:var(--plum);line-height:1;margin-top:6px}
+.mono .m span i{font-style:normal;font-size:.55em;color:var(--mauve-deep);padding:0 2px}
+.invite .txt{padding:18px 26px 38px;text-align:center}
+.invite .lead{color:var(--muted);font-size:14.5px;line-height:1.75}
+.invite .lead.en{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--ink);margin-top:10px;line-height:1.55}
+.couple{margin:26px 0 6px}
+.couple .en{font-family:'Pinyon Script',cursive;font-size:32px;color:var(--mauve-deep);line-height:1.25}
+.couple .th{font-size:16px;color:var(--plum);font-weight:400}
+.rings{display:flex;align-items:center;gap:12px;justify-content:center;margin:12px auto;max-width:280px}
+.rings::before,.rings::after{content:"";flex:1;height:1px;background:var(--line)}
+.rings svg{width:28px;color:var(--mauve-deep)}
+.invite .meta{margin-top:20px;font-size:14.5px;color:var(--ink);line-height:1.8}
+.invite .meta .en{display:block;font-family:'Josefin Sans';letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;color:var(--mauve-deep)}
+
+/* info cards */
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-decoration:none;color:inherit;display:block;transition:transform .15s,box-shadow .15s}
+a.card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(156,120,128,.15)}
+.card .k{font-family:'Josefin Sans';letter-spacing:.24em;text-transform:uppercase;font-size:11px;color:var(--mauve-deep)}
+.card h4{font-weight:400;font-size:18px;color:var(--plum);margin:6px 0 4px;line-height:1.35}
+.card p{font-size:13.5px;color:var(--muted)}
+.card .go{margin-top:12px;font-size:13.5px;color:var(--terra);font-weight:400}
+.part{margin-top:18px}
+.part:first-of-type{margin-top:10px}
+.part h5{font-family:'Josefin Sans';font-weight:400;letter-spacing:.22em;text-transform:uppercase;font-size:12.5px;color:var(--plum)}
+.part h5 small{display:block;font-family:'Prompt';letter-spacing:0;text-transform:none;font-size:13px;color:var(--muted);font-weight:300}
+.tl{list-style:none;margin-top:6px}
+.tl li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.tl li:last-child{border-bottom:0}
+.tl .t{font-family:'Josefin Sans';font-size:18px;color:var(--plum)}
+.tl .t2{font-size:15px;color:var(--ink)}
+.tl .t2 small{display:block;color:var(--muted);font-size:12.5px}
+.party{margin-top:6px;background:var(--blush);border-radius:16px;padding:14px 16px;font-size:14px}
+.party small{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--muted)}
+
+/* moments reel */
+#moments{padding-bottom:20px}
+.reel{position:relative;max-width:480px;margin:0 auto;aspect-ratio:2/3;border-radius:26px;overflow:hidden;background:#3a2b2f;box-shadow:0 18px 50px rgba(92,65,72,.22)}
+.reel .f{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.reel .f.on{opacity:1}
+.reel .bg{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(24px) brightness(.8);transform:scale(1.1)}
+.reel .f img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform:scale(1);transition:transform 6s linear}
+.reel .f.on img{transform:scale(1.07)}
+.reel .f.cover img{object-fit:cover}
+.reel .shade{position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(180deg,transparent,rgba(60,40,45,.55));pointer-events:none}
+.reel .cap{position:absolute;left:0;right:0;bottom:22px;text-align:center;color:#fff;font-family:'Pinyon Script',cursive;font-size:34px;text-shadow:0 2px 14px rgba(0,0,0,.3);pointer-events:none}
+.reel .bars{position:absolute;top:12px;left:14px;right:14px;display:flex;gap:4px;pointer-events:none}
+.reel .bars i{flex:1;height:2.5px;border-radius:2px;background:rgba(255,255,255,.35);overflow:hidden}
+.reel .bars i b{display:block;height:100%;width:0;background:#fff}
+.reel .bars i.done b{width:100%}
+.reel .bars i.cur b{animation:fill var(--dur) linear forwards}
+@keyframes fill{to{width:100%}}
+.reel button{position:absolute;bottom:14px;right:14px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.18);color:#fff;cursor:pointer;font-size:12px;z-index:2}
+.reel-hint{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
+
+footer{background:var(--mauve);color:#fff;text-align:center;padding:52px 20px 40px;margin-top:40px}
+footer img.logo{width:min(240px,62vw);margin:0 auto}
+footer img.tl2{width:150px;margin:14px auto 0;opacity:.95}
+footer .help{max-width:520px;margin:26px auto 0;border:1px solid rgba(255,255,255,.6);border-radius:20px;padding:16px 18px;font-size:13.5px;line-height:1.7}
+footer .help b{display:block;font-family:'Josefin Sans';font-weight:400;letter-spacing:.24em;text-transform:uppercase;font-size:12px;margin-bottom:4px}
+footer .help small{display:block;font-size:12px;opacity:.88;margin-top:4px}
+footer .love{font-family:'Pinyon Script',cursive;font-size:32px;margin-top:28px;line-height:1.2}
+footer .love small{display:block;font-family:'Josefin Sans';letter-spacing:.24em;font-size:11px;text-transform:uppercase;opacity:.9;margin-top:4px}
+footer p{font-size:12.5px;opacity:.9;margin-top:16px;line-height:1.7}
+
+@media (max-width:560px){
+  .sec-head h2{font-size:32px}
+  .couple .en{font-size:28px}
+  .reel{border-radius:20px;margin:0 14px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" id="preview-ribbon"><b>PREVIEW</b>ตัวอย่างก่อนใช้งานจริง · ข้อมูลอาจมีการปรับ</div>
+
+<header class="topbar">
+  <img src="img/logo-mauve.png" alt="Mahassajan">
+  <span class="eyebrow">Wedding Planner</span>
+</header>
+
+<section class="hero" style="padding:0">
+  <img src="img/hero.jpg" alt="Ploy & Pherm">
+  <div class="hero-in">
+    <div class="eyebrow">The Wedding Celebration</div>
+    <h1>Ploy<span class="amp">&amp;</span>Pherm</h1>
+    <div class="th-nick">คุณพลอย &amp; คุณเพิ่ม</div>
+    <div class="names">Thanyalak Cheennamsai · Sarunchai Wasoonthara</div>
+    <div class="rule"></div>
+    <div class="when">Thursday · 19 November 2026</div>
+    <div class="when-th">วันพฤหัสบดีที่ 19 พฤศจิกายน 2569</div>
+    <div class="where">The Ritz-Carlton, Bangkok · โรงแรมเดอะ ริทซ์-คาร์ลตัน กรุงเทพฯ</div>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="cd"><b id="cd-d">0</b><span>วัน<small>Days</small></span></div>
+      <div class="cd"><b id="cd-h">00</b><span>ชั่วโมง<small>Hours</small></span></div>
+      <div class="cd"><b id="cd-m">00</b><span>นาที<small>Minutes</small></span></div>
+      <div class="cd"><b id="cd-s">00</b><span>วินาที<small>Seconds</small></span></div>
+    </div>
+    <div class="cd-cap" id="cd-cap">Until the Wedding Reception · 18:00</div>
+    <div class="cd-done" id="cd-done">Tonight is the night · ขอบคุณที่มาร่วมเป็นส่วนหนึ่งในวันสำคัญของเรา</div>
+    <a class="cta" href="#finder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      ค้นหาที่นั่งของคุณ
+    </a>
+  </div>
+</section>
+
+<!-- FIND YOUR SEAT -->
+<section id="finder">
+  <div class="wrap">
+    <div class="sec-head">
+      <img class="heart-div" src="img/heart-mauve.png" alt="">
+      <div class="eyebrow">Find your seat</div>
+      <h2>ค้นหาหมายเลขโต๊ะของคุณ</h2>
+      <p>ยินดีต้อนรับแขกทุกท่าน กรุณาค้นหาชื่อของคุณเพื่อดูหมายเลขโต๊ะและตำแหน่งที่นั่งภายในงาน</p>
+      <p class="en">Welcome! Please search for your name to find your assigned table and seating location.</p>
+    </div>
+    <div class="search">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Search Guest Name | ค้นหาชื่อแขก" aria-label="ค้นหาชื่อแขก">
+      <button class="clear" id="clear" aria-label="ล้าง">✕</button>
+    </div>
+    <div class="hint" id="hint">พิมพ์ชื่อเล่น ชื่อจริง นามสกุล หรือชื่อ IG บางส่วนก็เจอ · ถ้ามีชื่อซ้ำ เลือกจากรายการได้เลย</div>
+    <ul class="matches" id="matches"></ul>
+    <div class="more" id="more" style="display:none"></div>
+    <div class="empty" id="empty" style="display:none">ยังไม่พบชื่อนี้ ลองพิมพ์ชื่อเล่น ชื่อจริง นามสกุล หรือชื่อ IG อีกครั้ง<br>หรือติดต่อทีม Mahassajan ที่จุดลงทะเบียนได้เลยค่ะ</div>
+
+    <div class="result" id="result">
+      <div class="who">
+        <div class="eyebrow">Welcome</div>
+        <h3 id="r-name"></h3>
+      </div>
+      <div class="chips">
+        <div class="chip t"><small>Table · โต๊ะ</small><strong id="r-table"></strong></div>
+        <div class="chip s" id="r-seat-chip"><small>Seat · ที่นั่ง</small><strong id="r-seat"></strong></div>
+      </div>
+      <div class="tname" id="r-tname"></div>
+      <div class="seat-desc" id="r-desc"></div>
+      <div class="staff-note" id="r-note"></div>
+
+      <div class="tabs">
+        <button class="on" data-tab="plan">โต๊ะอยู่ตรงไหน<small>View Seating Plan</small></button>
+        <button data-tab="mates">ใครนั่งโต๊ะเดียวกัน<small id="r-count"></small></button>
+      </div>
+      <div id="tab-plan">
+        <div class="plan-scroll" id="plan-scroll"></div>
+        <div class="plan-hint">เลื่อนซ้าย–ขวาเพื่อดูผังทั้งห้อง</div>
+        <div class="legend">
+          <span><i style="background:var(--terra)"></i>ที่นั่งของคุณ</span>
+          <span><i style="background:var(--plum)"></i>โต๊ะของคุณ</span>
+          <span><i style="background:#F3D9C4"></i>ที่นั่งเด็ก</span>
+          <span><i style="background:var(--terra);border-radius:2px"></i>จุดลงทะเบียน / ทางเข้า</span>
+        </div>
+      </div>
+      <div id="tab-mates" style="display:none">
+        <ul class="mates" id="mates"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WELCOME -->
+<section id="invite">
+  <div class="wrap">
+    <div class="invite">
+      <div class="mono"><div class="m" role="img" aria-label="Ploy & Pherm"><span>P<i>&amp;</i>P</span></div></div>
+      <div class="txt">
+        <div class="eyebrow" style="color:var(--mauve-deep)">Welcome to our wedding</div>
+        <div style="font-size:15px;color:var(--plum);margin:4px 0 16px">ยินดีต้อนรับสู่งานแต่งงานของเรา</div>
+        <p class="lead">ขอต้อนรับครอบครัว ญาติผู้ใหญ่ และเพื่อน ๆ ทุกท่านเข้าสู่วันสำคัญของเราทั้งสองคน<br>ขอบคุณที่มาร่วมเป็นส่วนหนึ่งของความทรงจำแสนพิเศษในวันนี้</p>
+        <p class="lead en">We are delighted to celebrate this special day with our beloved family and friends.
+        Thank you for being part of our beautiful journey and sharing this unforgettable moment with us.</p>
+        <div class="couple">
+          <div class="en">Thanyalak Cheennamsai</div>
+          <div class="th">คุณพลอย</div>
+          <div class="rings"><svg viewBox="0 0 32 18" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="9" r="7"/><circle cx="21" cy="9" r="7"/></svg></div>
+          <div class="en">Sarunchai Wasoonthara</div>
+          <div class="th">คุณเพิ่ม</div>
+        </div>
+        <div class="meta">
+          <span class="en">Thursday · 19 November 2026</span>วันพฤหัสบดีที่ 19 พฤศจิกายน 2569<br>
+          <span class="en" style="margin-top:8px">The Ritz-Carlton, Bangkok</span>โรงแรมเดอะ ริทซ์-คาร์ลตัน กรุงเทพฯ
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section id="details" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Wedding day schedule</div>
+      <h2>กำหนดการวันแต่งงาน</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="part">
+          <h5>Engagement Ceremony<small>พิธีหมั้นช่วงบ่าย</small></h5>
+          <ul class="tl">
+            <li><span class="t">12:00</span><span class="t2">ต้อนรับแขกและบริการอาหารว่าง<small>Welcome Refreshments · Guest Arrival &amp; Refreshments</small></span></li>
+            <li><span class="t">13:09</span><span class="t2">พิธีแห่ขันหมากตามประเพณีไทย<small>Khan Mak Procession · Traditional Thai Engagement Procession</small></span></li>
+            <li><span class="t">14:09</span><span class="t2">พิธีกราบคุณพ่อคุณแม่และสวมแหวนหมั้น<small>Family Blessings &amp; Ring Ceremony · Exchange of Rings</small></span></li>
+            <li><span class="t">14:29</span><span class="t2">พิธียกน้ำชาตามประเพณีจีน<small>Chinese Tea Ceremony · Traditional Chinese Tea Ceremony</small></span></li>
+            <li><span class="t">15:39</span><span class="t2">พิธีหลั่งน้ำพระพุทธมนต์ (รดน้ำสังข์)<small>Thai Water Blessing Ceremony</small></span></li>
+          </ul>
+        </div>
+        <div class="part">
+          <h5>Wedding Reception<small>งานเลี้ยงฉลองมงคลสมรส</small></h5>
+          <ul class="tl">
+            <li><span class="t">18:00</span><span class="t2">เปิดลงทะเบียนต้อนรับแขกและถ่ายภาพร่วมกับคู่บ่าวสาว<small>Guest Registration, Welcome &amp; Wedding Photography</small></span></li>
+            <li><span class="t">19:20</span><span class="t2">เริ่มพิธีการฉลองมงคลสมรส<small>Wedding Reception Ceremony Begins</small></span></li>
+          </ul>
+        </div>
+        <div class="part">
+          <h5>After Party<small>งานเลี้ยงสังสรรค์หลังพิธีการ</small></h5>
+          <div class="party">ร่วมสนุกและเฉลิมฉลองค่ำคืนสุดพิเศษกับคู่บ่าวสาว<small>Let's continue the celebration with music, dancing, and unforgettable memories!</small></div>
+        </div>
+      </div>
+      <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=The+Ritz-Carlton+Bangkok+One+Bangkok" target="_blank" rel="noopener">
+        <div class="k">Wedding Venue · สถานที่จัดงาน</div>
+        <h4>The Ritz-Carlton, Bangkok</h4>
+        <p>โรงแรมเดอะ ริทซ์-คาร์ลตัน กรุงเทพฯ · One Bangkok, Bangkok, Thailand</p>
+        <div class="go">GET DIRECTIONS · นำทางไปยังโรงแรม →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MOMENTS -->
+<section id="moments">
+  <div class="sec-head wrap">
+    <div class="eyebrow">Our moments</div>
+    <h2>Ploy &amp; Pherm</h2>
+  </div>
+  <div class="reel" id="reel">
+    <div class="bars" id="bars"></div>
+    <div class="shade"></div>
+    <div class="cap">Ploy &amp; Pherm</div>
+    <button id="reel-pp" aria-label="หยุด/เล่น">❚❚</button>
+  </div>
+  <div class="reel-hint">แตะที่ภาพเพื่อดูภาพถัดไป</div>
+</section>
+
+<footer>
+  <img class="logo" src="img/logo-white.png" alt="Mahassajan">
+  <img class="tl2" src="img/tagline-white.png" alt="Wedding Planner">
+  <div class="help">
+    <b>Need assistance? · ต้องการความช่วยเหลือ?</b>
+    หาชื่อไม่เจอ หรือต้องการความช่วยเหลือในการค้นหาโต๊ะ ติดต่อทีมงาน Mahassajan Wedding Planner ที่จุดลงทะเบียนได้เลยค่ะ
+    <small>If you need any assistance or help finding your table, our Mahassajan Wedding Planner team will be happy to assist you at the registration area.</small>
+  </div>
+  <div class="love">With love, Ploy &amp; Pherm<small>19 November 2026</small></div>
+  <p>Thank you for celebrating with us.<br>ขอบคุณที่มาร่วมเป็นส่วนหนึ่งในวันสำคัญของเรา</p>
+  <p style="opacity:.75;font-size:11.5px">MAHASSAJAN WEDDING PLANNER · Wedding Planning &amp; Coordination</p>
+</footer>
+
+<!--
+  ===== ข้อมูลผังและแขก (สร้างจากไฟล์ Excel รายชื่อแขก) =====
+  tables: โต๊ะกลมทั้งหมด, seat 1 = ฝั่งตรงข้ามเวที นับวนตามเข็มนาฬิกา
+-->
+<script type="application/json" id="seat-data">
+{"tables": [{"id": "1", "name": "ญาติคุณแสงชัย", "type": "round", "cap": 10}, {"id": "2", "name": "เพื่อนคุณแอนนา กลุ่มK.ฉวีวรรณ", "type": "round", "cap": 11}, {"id": "3", "name": "โต๊ะประธาน", "type": "round", "cap": 10}, {"id": "4", "name": "โต๊ะพ่อ - แม่ เจ้าบ่าว", "type": "round", "cap": 10}, {"id": "5", "name": "ญาติคุณแอนนา ทุ่งสง", "type": "round", "cap": 10}, {"id": "6", "name": "เพื่อนคุณแอนนา กทม.,ชัยภัทร", "type": "round", "cap": 10}, {"id": "7", "name": "จังหวัดกระบี่", "type": "round", "cap": 10}, {"id": "8", "name": "เพื่อนคุณ แสงชัย", "type": "round", "cap": 10}, {"id": "9", "name": "ญาติ คุณแอนนา นครปฐม", "type": "round", "cap": 10}, {"id": "10", "name": "เพื่อนคุณแอนนา กลุ่มK.ปลา", "type": "round", "cap": 11}, {"id": "11", "name": "เพื่อนคุณ แสงชัย", "type": "round", "cap": 10}, {"id": "12", "name": "เพื่อนคุณ แสงชัย", "type": "round", "cap": 10}, {"id": "13", "name": "ญาติคุณแอนนา ทุ่งสง", "type": "round", "cap": 10}, {"id": "14", "name": "ญาติคุณแสงชัย ฉะเชิงเทรา", "type": "round", "cap": 10}, {"id": "15", "name": "เพื่อนคุณแอนนา กลุ่ม K.พีรศักดิ์", "type": "round", "cap": 10}, {"id": "16", "name": "ญาติคุณแอนนา ทุ่งสง", "type": "round", "cap": 10}, {"id": "17", "name": "เพื่อนเจ้าบ่าว BKK - ญาติฉะเชิงเทรา", "type": "round", "cap": 10}, {"id": "18", "name": "Nida Phuket / Golf Course", "type": "round", "cap": 10}, {"id": "19", "name": "เพื่อนเจ้าสาว WILDWOOD", "type": "round", "cap": 10}, {"id": "20", "name": "เพื่อนเจ้าสาว LOPBURIAN", "type": "round", "cap": 10}, {"id": "21", "name": "พ่อ-แม่เจ้าสาว", "type": "round", "cap": 10}, {"id": "22", "name": "ญาติเจ้าสาว", "type": "round", "cap": 11}, {"id": "23", "name": "เพื่อนเจ้าสาว PIBUL+ASL", "type": "round", "cap": 11}, {"id": "24", "name": "เพื่อนเจ้าสาว BEIJING", "type": "round", "cap": 10}, {"id": "25", "name": "ญาติปากช่อง", "type": "round", "cap": 10}, {"id": "26", "name": "ญาติลพบุรี", "type": "round", "cap": 10}, {"id": "27", "name": "เพื่อนเจ้าบ่าว Phuket /", "type": "round", "cap": 10}, {"id": "28", "name": "เพื่อนเจ้าบ่าว Phuket", "type": "round", "cap": 10}, {"id": "29", "name": "ลำปาง", "type": "round", "cap": 11}, {"id": "30", "name": "แขกลพบุรี", "type": "round", "cap": 10}, {"id": "31", "name": "เพื่อนเจ้าบ่าว Phuket", "type": "round", "cap": 10}, {"id": "32", "name": "เพื่อนเจ้าบ่าว YEC krabi", "type": "round", "cap": 10}, {"id": "33", "name": "ญาติเจ้าสาว", "type": "round", "cap": 10}, {"id": "34", "name": "แขกลพบุรี", "type": "round", "cap": 10}, {"id": "35", "name": "เพื่อนเจ้าบ่าว BU", "type": "round", "cap": 10}, {"id": "36", "name": "เพื่อนเจ้าบ่าว โชคชัย", "type": "round", "cap": 10}, {"id": "37", "name": "เพื่อนเจ้าสาว DX+ASL", "type": "round", "cap": 10}, {"id": "38", "name": "เพื่อนเจ้าสาว", "type": "round", "cap": 10}, {"id": "39", "name": "เพื่อนเจ้าบ่าว (Trinity)", "type": "round", "cap": 10}, {"id": "40", "name": "เพื่อนเจ้าสาว DX", "type": "round", "cap": 11}], "guests": [{"name": "คุณสันติ วสุนธรา", "table": "1", "seats": [1], "kid": false, "note": ""}, {"name": "คุณเช วสุนธราริน", "table": "1", "seats": [2], "kid": false, "note": ""}, {"name": "ดร.มุก วสุนธรา และครอบครัว 5 คน", "table": "1", "seats": [3, 4, 5, 6, 7], "kid": false, "note": ""}, {"name": "คุณสัญาริญ โกสลานนท์และลูก 2 คน", "table": "1", "seats": [8, 9, 10], "kid": false, "note": ""}, {"name": "คุณฉวีวรรณ สินธุพัฒน์และลูกชาย", "table": "2", "seats": [1, 2], "kid": false, "note": ""}, {"name": "คุณละเวง หวัง", "table": "2", "seats": [3], "kid": false, "note": ""}, {"name": "คุณสิริกานต์ ณ ตะกั่วทุ่ง", "table": "2", "seats": [4], "kid": false, "note": ""}, {"name": "คุณนายดวงสุดา ขันเงิน", "table": "2", "seats": [5], "kid": false, "note": ""}, {"name": "คุณเตือนใจ เรืองศรี", "table": "2", "seats": [6], "kid": false, "note": ""}, {"name": "คุณอ่อนจิตร นาคปนทองและสามี", "table": "2", "seats": [7, 8], "kid": false, "note": ""}, {"name": "คุณอัญชลี กัลยวณิชย์", "table": "2", "seats": [9], "kid": false, "note": ""}, {"name": "คุณพันธ์ศิริ กิตติธรกุล", "table": "2", "seats": [10], "kid": false, "note": ""}, {"name": "คุณสุชาดา ไทรงาม", "table": "2", "seats": [11], "kid": false, "note": ""}, {"name": "ดร.นุชนาถ วสุรัตน์", "table": "3", "seats": [1], "kid": false, "note": ""}, {"name": "คุณภรณี ลีนุตพงษ์", "table": "3", "seats": [2], "kid": false, "note": ""}, {"name": "ฯพณฯปองพล อดิเรกสาร", "table": "3", "seats": [3], "kid": false, "note": "ประธานในพิธี; กล่าวอวยพร 1"}, {"name": "ท่านปรพล อดิเรกสาร", "table": "3", "seats": [4], "kid": false, "note": ""}, {"name": "คุณเทพ อิงคสิทธิ์ และภริยา", "table": "3", "seats": [5, 6], "kid": false, "note": "ผู้คล้องพวงมาลัย"}, {"name": "คุณอรรถวิชช์ สุวรรณภักดี", "table": "3", "seats": [7], "kid": false, "note": ""}, {"name": "คุณภคินี สุวรรณภักดี", "table": "3", "seats": [8], "kid": false, "note": ""}, {"name": "พลเอกอกนิษฐ์ หมื่นสวัสดิ์", "table": "4", "seats": [1], "kid": false, "note": "ผู้กล่าวคำอวยพร คนที่ 2"}, {"name": "พลเอกบุญธรรม โอริส", "table": "4", "seats": [2], "kid": false, "note": ""}, {"name": "พล.อ.มารุต ปัชโชตะสิงห์และภริยา", "table": "4", "seats": [3, 4], "kid": false, "note": ""}, {"name": "ม.ล.กิติบดี ประวิตร", "table": "4", "seats": [5], "kid": false, "note": ""}, {"name": "พล.อ.ม.ล.สุปรีดี ประวิตร", "table": "4", "seats": [6], "kid": false, "note": ""}, {"name": "พต.ท.สุริยา บาราสัน", "table": "4", "seats": [7], "kid": false, "note": ""}, {"name": "ป๊า - ม๊า", "table": "4", "seats": [8, 9], "kid": false, "note": ""}, {"name": "คุณพงษ์เดช มโนรสและภรรยา", "table": "7", "seats": [1], "kid": false, "note": ""}, {"name": "คุณสมเกียรติ กิตติธรกุล", "table": "7", "seats": [2], "kid": false, "note": ""}, {"name": "คุณสมยศ กิตติธรกุลและภรรยา", "table": "7", "seats": [3], "kid": false, "note": ""}, {"name": "คุณสมศักดิ์ กิตติธรกุลและภรรยา", "table": "7", "seats": [4], "kid": false, "note": ""}, {"name": "คุณกิตติ กิตติธรกุลและภรรยา", "table": "7", "seats": [5], "kid": false, "note": ""}, {"name": "คุณถิรเดช ตั้งมั่นก่อกิจและภรรยา", "table": "7", "seats": [6], "kid": false, "note": ""}, {"name": "คุณกิตติชัย เอ่งฉ้วนและภรรยา", "table": "7", "seats": [7], "kid": false, "note": ""}, {"name": "คุณ สมบูรณ์ ครองศิริวัฒ", "table": "7", "seats": [8], "kid": false, "note": ""}, {"name": "คุณมังกร ธนสารศิลป์", "table": "8", "seats": [1], "kid": false, "note": ""}, {"name": "คุณวรเทพ วงศาสุทธิกุล", "table": "8", "seats": [2], "kid": false, "note": ""}, {"name": "ดร.สุปรีดิ์ วงศ์ดีพร้อม", "table": "8", "seats": [3], "kid": false, "note": ""}, {"name": "คมวิทย์ (บิ๊ก)", "table": "8", "seats": [4], "kid": false, "note": ""}, {"name": "นพ.สามารถ ตันอริยกุล", "table": "8", "seats": [5], "kid": false, "note": ""}, {"name": "คุณสมหมาย เอี่ยมสะอาด", "table": "8", "seats": [6], "kid": false, "note": ""}, {"name": "ภรรยา คุณสมหมาย", "table": "8", "seats": [7], "kid": false, "note": ""}, {"name": "อ.ชัยรัตน์", "table": "8", "seats": [8], "kid": false, "note": ""}, {"name": "คุณ สุรัช - คุณรวินันท์ นาวีการ", "table": "5", "seats": [1, 2], "kid": false, "note": ""}, {"name": "คุณกานดา -คุณทับทิม มหิสารากุล", "table": "5", "seats": [3, 4], "kid": false, "note": ""}, {"name": "รศ.ดร.สุทธิพงษ์ - นำพร ศรีวิชัย", "table": "5", "seats": [5, 6], "kid": false, "note": ""}, {"name": "คุณมานัส - คุณรุจิรา คืนตัก", "table": "5", "seats": [7, 8], "kid": false, "note": ""}, {"name": "คุณสมหมาย - คุณณัชทิภา โชครุ่ง", "table": "5", "seats": [9, 10], "kid": false, "note": ""}, {"name": "คุณสมนึก - คุณสุพัชชา มิตรสัมพันธ์", "table": "6", "seats": [1, 2], "kid": false, "note": ""}, {"name": "คุณรัชตา วณิชเสถียรและพี่อ้อม", "table": "6", "seats": [3, 4], "kid": false, "note": ""}, {"name": "คุณราณี ศุภพาณิชย์วงศ์", "table": "6", "seats": [5], "kid": false, "note": ""}, {"name": "คุณลินจง จารุกิจพิพัฒน์และลูกสาว 2 คน", "table": "6", "seats": [6, 7, 8], "kid": false, "note": ""}, {"name": "คุณชัยภัทร วสุนธราและภรรยา", "table": "6", "seats": [9, 10], "kid": false, "note": ""}, {"name": "คุณนันท์นพัส ญาโนภาส", "table": "9", "seats": [1], "kid": false, "note": ""}, {"name": "คุณสุวกุล อุดมวันสุขทวี", "table": "9", "seats": [2], "kid": false, "note": ""}, {"name": "คุณสุทัศน์ ญาโนภาพและภรรคยา", "table": "9", "seats": [3, 4], "kid": false, "note": ""}, {"name": "คุณเอมอร- ชุมพลพาณิชย์ และสามี", "table": "9", "seats": [5, 6], "kid": false, "note": ""}, {"name": "คุณสุวัฒน์ ญาโนภาพและภรรยา", "table": "9", "seats": [7, 8], "kid": false, "note": ""}, {"name": "คุณสุดชาย - คุณพีรานุช รักษ์เจริญ", "table": "9", "seats": [9, 10], "kid": false, "note": ""}, {"name": "คุณธีระเดช - คุณฤลิษา พรศิริอนันต์", "table": "10", "seats": [1, 2], "kid": false, "note": ""}, {"name": "คุณคุณากร กิตติคุณ", "table": "10", "seats": [3], "kid": false, "note": ""}, {"name": "คุณพรเพ็ญ เหล่าเพิ่มสกุล", "table": "10", "seats": [4], "kid": false, "note": ""}, {"name": "คุณสุกัญญา พึ่งถิ่น (3 คน)", "table": "10", "seats": [5, 6, 7], "kid": false, "note": ""}, {"name": "คุณรุ่งทิพย์ จามรสวัสดิ์", "table": "10", "seats": [8], "kid": false, "note": ""}, {"name": "คุณเสาวลักษณ์ ภูเก้าล้วน", "table": "10", "seats": [9], "kid": false, "note": ""}, {"name": "คุณพิมณัฏฐา กิตติธรกุล", "table": "10", "seats": [10], "kid": false, "note": ""}, {"name": "คุณศิริกานต์ รัชตวิศาลไกร", "table": "10", "seats": [11], "kid": false, "note": ""}, {"name": "คุณอดิศร พิพัฒน์วาณิชย์", "table": "11", "seats": [1], "kid": false, "note": ""}, {"name": "คุณสุรเกียรติ วงศ์วาสิน", "table": "11", "seats": [2], "kid": false, "note": ""}, {"name": "พล.ท.สมบูรณ์ ศรีมณฑา", "table": "11", "seats": [3], "kid": false, "note": ""}, {"name": "คุณธงชัย วรไพจิตร", "table": "11", "seats": [4], "kid": false, "note": ""}, {"name": "ดร.พรเทพ เตชะไพบูลย์", "table": "11", "seats": [5], "kid": false, "note": ""}, {"name": "คุณดวงมณี พิกุลศรี", "table": "11", "seats": [6], "kid": false, "note": ""}, {"name": "คุณอภิญาดี อมาตยกุล", "table": "11", "seats": [7], "kid": false, "note": ""}, {"name": "คุณอรัญ เอี่ยมสุรีย์", "table": "11", "seats": [8], "kid": false, "note": ""}, {"name": "คุณสมชัย ตัณมานะศิริ", "table": "12", "seats": [1], "kid": false, "note": ""}, {"name": "คุณวิสุทธิ์ กิตติรวีโชติ", "table": "12", "seats": [2], "kid": false, "note": ""}, {"name": "คุณผัสสพร หงวนศิริ", "table": "12", "seats": [3], "kid": false, "note": ""}, {"name": "คุณนันทพร สุริยกุล ณ อยุธยา", "table": "12", "seats": [4], "kid": false, "note": ""}, {"name": "คุณอัจฉรีย์ งามพร้อมสกุล", "table": "12", "seats": [5], "kid": false, "note": ""}, {"name": "อัจฉราวรรณ (แอ๊ด)", "table": "12", "seats": [6], "kid": false, "note": ""}, {"name": "คุณบุญชุย วสุนธรา", "table": "12", "seats": [7], "kid": false, "note": ""}, {"name": "นพ. สันชัย วสุนธรา", "table": "12", "seats": [8], "kid": false, "note": ""}, {"name": "คุณ จตุพร - คุณชนัดดา คืนตัก", "table": "13", "seats": [1, 2], "kid": false, "note": ""}, {"name": "คุณมรุน - คุณฐานิดา วสุนธรา", "table": "13", "seats": [3, 4], "kid": false, "note": ""}, {"name": "คุณฐิติพร - คุณกนกพร -คุณทิฆัมพร นาวีการ", "table": "13", "seats": [5, 6, 7], "kid": false, "note": ""}, {"name": "คุณกมลชนก วสุนธรา", "table": "13", "seats": [8], "kid": false, "note": ""}, {"name": "คุณกิติภพ - คุณชื่นประภา เอ่งฉ้วน", "table": "13", "seats": [9, 10], "kid": false, "note": ""}, {"name": "อาม่าวันดี วสุนธรา", "table": "14", "seats": [1], "kid": false, "note": ""}, {"name": "เหล่ากิ้มจือฮวย แซ่จั่ว", "table": "14", "seats": [2], "kid": false, "note": ""}, {"name": "คุรนัทธมน ศรีตระกูลช่าง", "table": "14", "seats": [3], "kid": false, "note": ""}, {"name": "อิ้มน้อย และ โจโจ้", "table": "14", "seats": [4, 5], "kid": false, "note": ""}, {"name": "โกวกัญญา วสุนธรา และลุงชัย", "table": "14", "seats": [6, 7], "kid": false, "note": ""}, {"name": "คุณมนตรี - คุณสุภาณี วสุนธรา", "table": "14", "seats": [8, 9], "kid": false, "note": ""}, {"name": "คุณพรสุภา ลือโลก", "table": "14", "seats": [10], "kid": false, "note": ""}, {"name": "คุณพีรศักดิ์ อัศวโกวิทกรณ์ และลูกสาว", "table": "15", "seats": [1, 2], "kid": false, "note": ""}, {"name": "ร.ต.อ.ไฉน-คุณชุติมันต์ สังข์ขำ", "table": "15", "seats": [3, 4], "kid": false, "note": ""}, {"name": "คุณถาวร - คุณวิภาชอร บุญรุ่งสกุลแก้ว", "table": "15", "seats": [5, 6], "kid": false, "note": ""}, {"name": "คุณเกษร สอสุทธิเมธ และลูกชาย", "table": "15", "seats": [7, 8], "kid": false, "note": ""}, {"name": "คุณกนกวลี เอ่งฉ้วน และลูกสาว", "table": "15", "seats": [9, 10], "kid": false, "note": ""}, {"name": "อาม่าเอมอร มหิสรากุล", "table": "16", "seats": [2], "kid": false, "note": ""}, {"name": "คุณพรรณี ลาภศิริวงศ์", "table": "16", "seats": [3], "kid": false, "note": ""}, {"name": "คุณรัตน์มณี ตันยิ่งยง", "table": "16", "seats": [4], "kid": false, "note": ""}, {"name": "คุณเกรียงไกร - ประนอม ญาโนภาส", "table": "16", "seats": [5], "kid": false, "note": ""}, {"name": "คุณลักขณา คืนตัก", "table": "16", "seats": [6], "kid": false, "note": ""}, {"name": "คุณนฤมล มหิสรากุล", "table": "16", "seats": [7], "kid": false, "note": ""}, {"name": "คุณพิภัชกร - คุณจิรัชยา ศรีสรธัญ", "table": "16", "seats": [8, 9], "kid": false, "note": ""}, {"name": "คุณยงยุทธ มหิสรากุล", "table": "16", "seats": [10], "kid": false, "note": ""}, {"name": "คุณยิ้มหวาน และ สามี", "table": "17", "seats": [1, 2], "kid": false, "note": ""}, {"name": "คุณบีท และ แฟน", "table": "17", "seats": [3, 4], "kid": false, "note": ""}, {"name": "คุณบิว และ คุณบี", "table": "17", "seats": [5, 6], "kid": false, "note": ""}, {"name": "คุณมสาร วสุนธรา", "table": "17", "seats": [7], "kid": false, "note": ""}, {"name": "เกื้อกูล วสุนธรา", "table": "17", "seats": [8], "kid": false, "note": ""}, {"name": "คุณ ปุฉพัฒน์ - ณัฎฐวัฒน์ ศรีตระกูลช่าง", "table": "17", "seats": [9, 10], "kid": false, "note": ""}, {"name": "คุณไชยอนันต์ เขมนิพัทธ์", "table": "18", "seats": [1], "kid": false, "note": ""}, {"name": "คุณ สมยศ ปาทาน", "table": "18", "seats": [2], "kid": false, "note": "อาหารมุสลิม"}, {"name": "พี่โจ", "table": "18", "seats": [3], "kid": false, "note": "อาหารมุสลิม"}, {"name": "คุณ ณรงค์ชัย ไชยรักษา", "table": "18", "seats": [4], "kid": false, "note": ""}, {"name": "คุณ ศิรสิทธิ์ รชตะพฤกษ์", "table": "18", "seats": [5], "kid": false, "note": ""}, {"name": "พี่ลาศ สนามบางไทร", "table": "18", "seats": [6], "kid": false, "note": ""}, {"name": "Ratchanee Bhakdibanijabongse", "table": "18", "seats": [7], "kid": false, "note": ""}, {"name": "คุณลิฟ ปาล์มฮิล", "table": "18", "seats": [8], "kid": false, "note": ""}, {"name": "ภัทร วิสิฐนรภัทร", "table": "18", "seats": [9], "kid": false, "note": ""}, {"name": "Chaovatas Supapantita", "table": "18", "seats": [10], "kid": false, "note": ""}, {"name": "nathnaree", "table": "19", "seats": [1], "kid": false, "note": ""}, {"name": "pangtoday", "table": "19", "seats": [2], "kid": false, "note": ""}, {"name": "porschesolo", "table": "19", "seats": [3], "kid": false, "note": ""}, {"name": "ppinwr", "table": "19", "seats": [4], "kid": false, "note": ""}, {"name": "Nice wildwood", "table": "19", "seats": [5], "kid": false, "note": ""}, {"name": "pingvibes", "table": "19", "seats": [6], "kid": false, "note": ""}, {"name": "tananutjay", "table": "19", "seats": [7], "kid": false, "note": ""}, {"name": "xxcabambiino", "table": "19", "seats": [8], "kid": false, "note": ""}, {"name": "bextxer", "table": "19", "seats": [9], "kid": false, "note": ""}, {"name": "mmildpnt", "table": "19", "seats": [10], "kid": false, "note": ""}, {"name": "kquancha", "table": "20", "seats": [1], "kid": false, "note": ""}, {"name": "lyntothemoon", "table": "20", "seats": [2], "kid": false, "note": ""}, {"name": "fivekunnguan", "table": "20", "seats": [3], "kid": false, "note": ""}, {"name": "th.wan_nn", "table": "20", "seats": [4], "kid": false, "note": ""}, {"name": "newvara", "table": "20", "seats": [5], "kid": false, "note": ""}, {"name": "poowannn", "table": "20", "seats": [6], "kid": false, "note": ""}, {"name": "e.evwes", "table": "20", "seats": [7], "kid": false, "note": ""}, {"name": "nayotteaw", "table": "20", "seats": [8], "kid": false, "note": ""}, {"name": "อภิชัย คงวิเศษ", "table": "20", "seats": [9], "kid": false, "note": ""}, {"name": "อภิชัย คงวิเศษ(แฟนบอย)", "table": "20", "seats": [10], "kid": false, "note": ""}, {"name": "ณัฐ (น้องเจ้าสาว)", "table": "21", "seats": [1], "kid": false, "note": ""}, {"name": "เฟรม (น้องเจ้าสาว)", "table": "21", "seats": [2], "kid": false, "note": ""}, {"name": "คุณนิรุตย์ (พ่อเจ้าสาว)", "table": "21", "seats": [3], "kid": false, "note": ""}, {"name": "pao_puttipong", "table": "21", "seats": [4], "kid": false, "note": ""}, {"name": "ppbutaa", "table": "21", "seats": [5], "kid": false, "note": ""}, {"name": "กัลยกร วรณัฐอรชา", "table": "21", "seats": [6], "kid": false, "note": ""}, {"name": "ภาวณา วรณัฐอรชา", "table": "21", "seats": [7], "kid": false, "note": ""}, {"name": "คุณรัชนีกร (แม่เจ้าสาว)", "table": "21", "seats": [8], "kid": false, "note": ""}, {"name": "สุขุม เตียะเพชร", "table": "22", "seats": [1], "kid": false, "note": ""}, {"name": "ศศิธร ทองอิน", "table": "22", "seats": [2], "kid": false, "note": ""}, {"name": "ปรัชญาภรณ์ เตียะเพชร", "table": "22", "seats": [3], "kid": false, "note": ""}, {"name": "Robert Catchpole", "table": "22", "seats": [4], "kid": false, "note": ""}, {"name": "Tntzd", "table": "22", "seats": [5], "kid": false, "note": ""}, {"name": "Ntntek", "table": "22", "seats": [6], "kid": false, "note": ""}, {"name": "Aungingncd", "table": "22", "seats": [7], "kid": false, "note": ""}, {"name": "น้าวรรณ", "table": "22", "seats": [8], "kid": false, "note": ""}, {"name": "ปลาย", "table": "22", "seats": [9], "kid": false, "note": ""}, {"name": "น้ำหว้า", "table": "22", "seats": [10], "kid": false, "note": ""}, {"name": "ดวิณ-อคิณ", "table": "22", "seats": [11], "kid": true, "note": "เด็ก"}, {"name": "thamonwxn", "table": "23", "seats": [1], "kid": false, "note": ""}, {"name": "thamonwxn (พี่เฟียต)", "table": "23", "seats": [2], "kid": false, "note": ""}, {"name": "ggguidee", "table": "23", "seats": [3], "kid": false, "note": ""}, {"name": "cestmoihera", "table": "23", "seats": [4], "kid": false, "note": ""}, {"name": "tunlatornn", "table": "23", "seats": [5], "kid": false, "note": ""}, {"name": "itsmepleng_", "table": "23", "seats": [6], "kid": false, "note": ""}, {"name": "itsmepleng_ (แฟนพี่เพลง)", "table": "23", "seats": [7], "kid": false, "note": ""}, {"name": "pooshiezty", "table": "23", "seats": [8], "kid": false, "note": ""}, {"name": "pnrrnq", "table": "23", "seats": [9], "kid": false, "note": ""}, {"name": "pnrrnq (พี่แพรว)", "table": "23", "seats": [10], "kid": false, "note": ""}, {"name": "sbprae", "table": "23", "seats": [11], "kid": false, "note": "อิสลาม ไม่ทาน"}, {"name": "thitiplv", "table": "24", "seats": [1], "kid": false, "note": ""}, {"name": "mdkywpm", "table": "24", "seats": [2], "kid": false, "note": ""}, {"name": "mdkywpm (พี่โน๊ต)", "table": "24", "seats": [3], "kid": false, "note": ""}, {"name": "ripluem", "table": "24", "seats": [4], "kid": false, "note": ""}, {"name": "jenttt", "table": "24", "seats": [5], "kid": false, "note": ""}, {"name": "tteenn.t", "table": "24", "seats": [6], "kid": false, "note": ""}, {"name": "taetat_tim", "table": "24", "seats": [7], "kid": false, "note": ""}, {"name": "fah_teesud", "table": "24", "seats": [8], "kid": false, "note": ""}, {"name": "nininichakan", "table": "24", "seats": [9], "kid": false, "note": ""}, {"name": "chotiwitttt", "table": "24", "seats": [10], "kid": false, "note": ""}, {"name": "สมศักดิ์ ศรีสังข์สุข", "table": "25", "seats": [1], "kid": false, "note": ""}, {"name": "ศิตานัน ศรีสังข์สุข", "table": "25", "seats": [2], "kid": false, "note": ""}, {"name": "ละออ มีแก้ว", "table": "25", "seats": [3], "kid": false, "note": ""}, {"name": "จิรพันธุ์ เทียนขาว", "table": "25", "seats": [4], "kid": false, "note": ""}, {"name": "สรชา ศรีสังข์สุข", "table": "25", "seats": [5], "kid": false, "note": ""}, {"name": "พิชชาอร มิตรชื่น", "table": "25", "seats": [6], "kid": false, "note": ""}, {"name": "ดล (น้องเจ้าสาว)", "table": "25", "seats": [7], "kid": false, "note": ""}, {"name": "พลัส", "table": "25", "seats": [8], "kid": false, "note": ""}, {"name": "ยูยะ", "table": "25", "seats": [9], "kid": false, "note": ""}, {"name": "แมทธิว", "table": "25", "seats": [10], "kid": false, "note": ""}, {"name": "ธำรงค์ จีนน้ำใส", "table": "26", "seats": [1], "kid": false, "note": ""}, {"name": "อนงค์ จีนน้ำใส", "table": "26", "seats": [2], "kid": false, "note": ""}, {"name": "จุฑามาศ สุนะวรรณ", "table": "26", "seats": [3], "kid": false, "note": ""}, {"name": "สมหมาย จีนน้ำใส", "table": "26", "seats": [4], "kid": false, "note": ""}, {"name": "สุดารัตน์ จีนน้ำใส", "table": "26", "seats": [5], "kid": false, "note": ""}, {"name": "สุกฤตา จีนน้ำใส", "table": "26", "seats": [6], "kid": false, "note": ""}, {"name": "จิณัฐตา สุนะวัน", "table": "26", "seats": [7], "kid": false, "note": ""}, {"name": "ปราณี โสภาพล", "table": "26", "seats": [8], "kid": false, "note": ""}, {"name": "ปราณี โสภาพล (น้องกิ่ง)", "table": "26", "seats": [9], "kid": false, "note": ""}, {"name": "หวานเย็น พรหมแก้ว", "table": "26", "seats": [10], "kid": false, "note": ""}, {"name": "เจม สิทธิชัย และ พี่แมงมุม", "table": "27", "seats": [1, 2], "kid": false, "note": ""}, {"name": "เจม จตุรง และ น้ำตาล", "table": "27", "seats": [3, 4], "kid": false, "note": ""}, {"name": "ปั้น", "table": "27", "seats": [5], "kid": false, "note": ""}, {"name": "คุณภูมเรศ", "table": "27", "seats": [6], "kid": false, "note": ""}, {"name": "คุณเมธา", "table": "27", "seats": [7], "kid": false, "note": ""}, {"name": "พี่เอก innosim", "table": "27", "seats": [8], "kid": false, "note": ""}, {"name": "เฟิร์นหมอฟัน และแฟน", "table": "27", "seats": [9, 10], "kid": false, "note": ""}, {"name": "คริส & เบ้น", "table": "28", "seats": [1, 2], "kid": false, "note": ""}, {"name": "มาร์ค & เพลิน", "table": "28", "seats": [3, 4], "kid": false, "note": ""}, {"name": "โอป", "table": "28", "seats": [5], "kid": false, "note": ""}, {"name": "ปืน", "table": "28", "seats": [6], "kid": false, "note": ""}, {"name": "พี & Sunny", "table": "28", "seats": [7, 8], "kid": false, "note": ""}, {"name": "เวสภู", "table": "28", "seats": [9], "kid": false, "note": ""}, {"name": "ต้น", "table": "28", "seats": [10], "kid": false, "note": ""}, {"name": "สุพร เตียรถ์ภัทรดิลก", "table": "29", "seats": [1], "kid": false, "note": ""}, {"name": "สินสร้อย เตียรถ์ภัทรดิลก", "table": "29", "seats": [2], "kid": false, "note": ""}, {"name": "สุวัช เตียรถ์ภัทรดิลก", "table": "29", "seats": [3], "kid": false, "note": ""}, {"name": "นภัสนันท์ เตียรถ์ภัทรดิลก", "table": "29", "seats": [4], "kid": false, "note": ""}, {"name": "สมภพ เตียรถ์ภัทรดิลก", "table": "29", "seats": [5], "kid": false, "note": ""}, {"name": "พัชราพรณ์ เตียรถ์ภัทรดิลก", "table": "29", "seats": [6], "kid": false, "note": ""}, {"name": "อรพรรณ ทาสอน", "table": "29", "seats": [7], "kid": false, "note": ""}, {"name": "ชัชชัย ทาสอน", "table": "29", "seats": [8], "kid": false, "note": ""}, {"name": "ชาร์เตอร์", "table": "29", "seats": [9], "kid": true, "note": "เด็ก"}, {"name": "แชมป์เปี้ยน", "table": "29", "seats": [10], "kid": true, "note": "เด็ก"}, {"name": "เนเน่", "table": "29", "seats": [11], "kid": true, "note": "เด็ก"}, {"name": "บุญธรรม โสภาพล", "table": "30", "seats": [1], "kid": false, "note": ""}, {"name": "tonistxff_", "table": "30", "seats": [2], "kid": false, "note": ""}, {"name": "tonistxff_ (น้องบิ๊ก)", "table": "30", "seats": [3], "kid": false, "note": ""}, {"name": "สรวง แก้วงาม", "table": "30", "seats": [4], "kid": false, "note": ""}, {"name": "ทวีศักดิ์ อาจมิตร", "table": "30", "seats": [5], "kid": false, "note": ""}, {"name": "ประทีป โตพูล", "table": "30", "seats": [6], "kid": false, "note": ""}, {"name": "ประทีป โตพูล 2", "table": "30", "seats": [7], "kid": false, "note": ""}, {"name": "พี่ยับ", "table": "30", "seats": [8], "kid": false, "note": ""}, {"name": "สมศักดิ์ อ่อนศรี", "table": "30", "seats": [9], "kid": false, "note": ""}, {"name": "สมศักดิ์ อ่อนศรี2 (ผู้ติดตาม)", "table": "30", "seats": [10], "kid": false, "note": ""}, {"name": "มิ้ม", "table": "31", "seats": [1], "kid": false, "note": ""}, {"name": "พิม", "table": "31", "seats": [2], "kid": false, "note": ""}, {"name": "ฝ้ายกุลิสลา ห้อง 7", "table": "31", "seats": [3], "kid": false, "note": ""}, {"name": "เมฆห้อง 7", "table": "31", "seats": [4], "kid": false, "note": ""}, {"name": "กานต์", "table": "31", "seats": [5], "kid": false, "note": ""}, {"name": "สุด", "table": "31", "seats": [6], "kid": false, "note": ""}, {"name": "ออย ห้อง 7", "table": "31", "seats": [7], "kid": false, "note": ""}, {"name": "บัณฑิตา อินทรทัศน์", "table": "31", "seats": [8], "kid": false, "note": ""}, {"name": "ภูบดี", "table": "31", "seats": [9], "kid": false, "note": ""}, {"name": "นิชาภัทร (นินู)", "table": "31", "seats": [10], "kid": false, "note": ""}, {"name": "พี่ตาล & พี่โน๊ต", "table": "32", "seats": [1, 2], "kid": false, "note": ""}, {"name": "พี่เหวย", "table": "32", "seats": [3], "kid": false, "note": ""}, {"name": "พี่แนต", "table": "32", "seats": [4], "kid": false, "note": ""}, {"name": "ยายไหม", "table": "32", "seats": [5, 6], "kid": false, "note": ""}, {"name": "ลี่+แองจี้", "table": "32", "seats": [7, 8], "kid": false, "note": ""}, {"name": "ใบตอง", "table": "32", "seats": [9], "kid": false, "note": ""}, {"name": "ประสิทธิ์ มะลิ", "table": "33", "seats": [1], "kid": false, "note": ""}, {"name": "ประเสริฐ จินดาเฟื่อง", "table": "33", "seats": [2], "kid": false, "note": ""}, {"name": "สุรเดช ซึมเมฆ", "table": "33", "seats": [3], "kid": false, "note": ""}, {"name": "วิจิตรา มะลิ", "table": "33", "seats": [4], "kid": false, "note": ""}, {"name": "ธนกฤต จินดาอนนต์", "table": "33", "seats": [5], "kid": false, "note": ""}, {"name": "อัจฉรา หลักกรด", "table": "33", "seats": [6], "kid": false, "note": ""}, {"name": "วรัญญา แสงทอง", "table": "33", "seats": [7], "kid": false, "note": ""}, {"name": "สำราญ แสงทอง", "table": "33", "seats": [8], "kid": false, "note": ""}, {"name": "สาคร อ่อนมี", "table": "33", "seats": [9], "kid": false, "note": ""}, {"name": "ไพทูรย์ ผดุงวิทยา", "table": "34", "seats": [1], "kid": false, "note": ""}, {"name": "พี่เปี๊ยก (แขกนิ)", "table": "34", "seats": [2], "kid": false, "note": ""}, {"name": "ครูจ๊อก", "table": "34", "seats": [3], "kid": false, "note": ""}, {"name": "สมชาย ขจรศักดิ์เลิศ", "table": "34", "seats": [4], "kid": false, "note": ""}, {"name": "นพดล ทวีแสง", "table": "34", "seats": [5], "kid": false, "note": ""}, {"name": "ทรายทอง (แฟนป็อป)", "table": "34", "seats": [6], "kid": false, "note": ""}, {"name": "หมอแว้", "table": "34", "seats": [7], "kid": false, "note": ""}, {"name": "ธนกร พิรมย์", "table": "34", "seats": [8], "kid": false, "note": ""}, {"name": "กมลภัทร ทศพร", "table": "34", "seats": [9], "kid": false, "note": ""}, {"name": "เม", "table": "35", "seats": [1], "kid": false, "note": ""}, {"name": "ปืน", "table": "35", "seats": [2], "kid": false, "note": ""}, {"name": "Ravipa Pinyotamanotai", "table": "35", "seats": [3, 4], "kid": false, "note": ""}, {"name": "Robert", "table": "35", "seats": [5], "kid": false, "note": ""}, {"name": "Tony", "table": "35", "seats": [6], "kid": false, "note": ""}, {"name": "Rachan", "table": "35", "seats": [7], "kid": false, "note": ""}, {"name": "Akash", "table": "35", "seats": [8], "kid": false, "note": ""}, {"name": "Card", "table": "35", "seats": [9], "kid": false, "note": ""}, {"name": "Patick", "table": "35", "seats": [10], "kid": false, "note": ""}, {"name": "เปอร์ โชคชัย", "table": "36", "seats": [1, 2], "kid": false, "note": ""}, {"name": "เบล", "table": "36", "seats": [3], "kid": false, "note": ""}, {"name": "ทาม", "table": "36", "seats": [4], "kid": false, "note": ""}, {"name": "ฟุ๊ค", "table": "36", "seats": [5], "kid": false, "note": ""}, {"name": "แป้ง", "table": "36", "seats": [6], "kid": false, "note": "อาหารมุสลิม"}, {"name": "โป๊ย &โฟกัส", "table": "36", "seats": [7, 8], "kid": false, "note": ""}, {"name": "Milk โชคชัย", "table": "36", "seats": [9], "kid": false, "note": ""}, {"name": "น้องก้อง", "table": "36", "seats": [10], "kid": false, "note": ""}, {"name": "nutcp.c", "table": "37", "seats": [1], "kid": false, "note": ""}, {"name": "kevalyn.s", "table": "37", "seats": [2], "kid": false, "note": ""}, {"name": "grapewn", "table": "37", "seats": [3], "kid": false, "note": ""}, {"name": "giftism", "table": "37", "seats": [4], "kid": false, "note": ""}, {"name": "nineeeene", "table": "37", "seats": [5], "kid": false, "note": ""}, {"name": "iamicezzz", "table": "37", "seats": [6], "kid": false, "note": ""}, {"name": "jrwmk", "table": "37", "seats": [7], "kid": false, "note": ""}, {"name": "pyam.pn", "table": "37", "seats": [8], "kid": false, "note": ""}, {"name": "pukanpaint", "table": "37", "seats": [9], "kid": false, "note": ""}, {"name": "mntaom_", "table": "37", "seats": [10], "kid": false, "note": ""}, {"name": "อ้อ (เพื่อนรัช)", "table": "38", "seats": [1], "kid": false, "note": ""}, {"name": "อ้อ (เพื่อนรัช) 2", "table": "38", "seats": [2], "kid": false, "note": ""}, {"name": "อ้อ (เพื่อนรัช) 3", "table": "38", "seats": [3], "kid": false, "note": ""}, {"name": "app (เพื่อนนิ)", "table": "38", "seats": [4], "kid": false, "note": ""}, {"name": "app (เพื่อนนิ) 2", "table": "38", "seats": [5], "kid": false, "note": ""}, {"name": "เล็ก (เพื่อนนิ)", "table": "38", "seats": [6], "kid": false, "note": ""}, {"name": "เล็ก (เพื่อนนิ) 2", "table": "38", "seats": [7], "kid": false, "note": ""}, {"name": "phuchm_", "table": "38", "seats": [8], "kid": false, "note": ""}, {"name": "phuchm_ (พี่แพรว)", "table": "38", "seats": [9], "kid": false, "note": ""}, {"name": "เมฆ", "table": "39", "seats": [1], "kid": false, "note": ""}, {"name": "เรียว", "table": "39", "seats": [2], "kid": false, "note": ""}, {"name": "มาย", "table": "39", "seats": [3], "kid": false, "note": ""}, {"name": "ออมสิน", "table": "39", "seats": [4], "kid": false, "note": ""}, {"name": "แพมมี่", "table": "39", "seats": [5], "kid": false, "note": ""}, {"name": "วีนัส", "table": "39", "seats": [6], "kid": false, "note": ""}, {"name": "ยูโร", "table": "39", "seats": [7], "kid": false, "note": ""}, {"name": "แองจี้", "table": "39", "seats": [8], "kid": false, "note": ""}, {"name": "Paval", "table": "39", "seats": [9], "kid": false, "note": ""}, {"name": "ออม", "table": "39", "seats": [10], "kid": false, "note": ""}, {"name": "moohamm_", "table": "40", "seats": [1], "kid": false, "note": ""}, {"name": "gain_sp_", "table": "40", "seats": [2], "kid": false, "note": ""}, {"name": "kkankn", "table": "40", "seats": [3], "kid": false, "note": ""}, {"name": "fhamaimai", "table": "40", "seats": [4], "kid": false, "note": ""}, {"name": "fhamaimai (วาวา)", "table": "40", "seats": [5], "kid": false, "note": ""}, {"name": "hyejeeji", "table": "40", "seats": [6], "kid": false, "note": ""}, {"name": "boringmin", "table": "40", "seats": [7], "kid": false, "note": ""}, {"name": "cherryplw", "table": "40", "seats": [8], "kid": false, "note": ""}, {"name": "opedtubby", "table": "40", "seats": [9], "kid": false, "note": ""}, {"name": "donny DX", "table": "40", "seats": [10], "kid": false, "note": ""}, {"name": "spntts", "table": "40", "seats": [11], "kid": false, "note": ""}], "reserved": []}
+</script>
+
+<script>
+/* ===== Countdown to 19 Nov 2026 18:00 (Bangkok, UTC+7) ===== */
+(function(){
+  const target=new Date('2026-11-19T18:00:00+07:00').getTime();
+  const $=id=>document.getElementById(id), pad=n=>String(n).padStart(2,'0');
+  function tick(){
+    let s=Math.floor((target-Date.now())/1000);
+    if(s<=0){$('countdown').style.display='none';$('cd-cap').style.display='none';$('cd-done').style.display='block';return;}
+    $('cd-d').textContent=Math.floor(s/86400); s%=86400;
+    $('cd-h').textContent=pad(Math.floor(s/3600)); s%=3600;
+    $('cd-m').textContent=pad(Math.floor(s/60));
+    $('cd-s').textContent=pad(s%60);
+    setTimeout(tick,1000-Date.now()%1000);
+  }
+  tick();
+})();
+</script>
+
+<script>
+/* ===== Moments reel: auto-playing photo film ===== */
+(function(){
+  const N=16, DUR=3800, reel=document.getElementById('reel'), bars=document.getElementById('bars'), pp=document.getElementById('reel-pp');
+  reel.style.setProperty('--dur',DUR+'ms');
+  const frames=[];
+  for(let i=1;i<=N;i++){
+    const src='img/m'+String(i).padStart(2,'0')+'.jpg';
+    const f=document.createElement('div');f.className='f';
+    f.innerHTML='<div class="bg"></div><img alt="" decoding="async">';
+    f.dataset.src=src; reel.insertBefore(f,bars); frames.push(f);
+    const b=document.createElement('i');b.innerHTML='<b></b>';bars.appendChild(b);
+  }
+  function load(k){const f=frames[k%N];if(f.dataset.done)return;f.dataset.done=1;const im=f.querySelector('img');
+    im.onload=()=>{const r=im.naturalWidth/im.naturalHeight; if(r>0.6&&r<0.8) f.classList.add('cover');};
+    im.src=f.dataset.src;f.querySelector('.bg').style.backgroundImage='url('+f.dataset.src+')';}
+  let cur=-1,timer=null,playing=true,started=false;
+  function go(k){
+    cur=(k+N)%N; load(cur); load(cur+1);
+    frames.forEach((f,i)=>f.classList.toggle('on',i===cur));
+    [...bars.children].forEach((b,i)=>{b.className=i<cur?'done':'';});
+    const cb=bars.children[cur]; void cb.offsetWidth; cb.className=playing?'cur':'done';
+    clearTimeout(timer); if(playing) timer=setTimeout(()=>go(cur+1),DUR);
+  }
+  reel.addEventListener('click',e=>{if(e.target===pp)return;go(cur+1);});
+  pp.onclick=()=>{playing=!playing;pp.textContent=playing?'❚❚':'▶';go(cur);};
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&!started){started=true;go(0);}})},{rootMargin:'300px'});
+  io.observe(reel);
+})();
+</script>
+
+<script>
+const DATA = JSON.parse(document.getElementById('seat-data').textContent);
+const STAFF = location.hash==='#staff';
+window.addEventListener('hashchange',()=>location.reload());
+
+/* ===== Room geometry: The Ritz-Carlton Bangkok ballroom (from hotel floor plan) — 40 round tables, stage on the right ===== */
+const COL={1:762,5:715,9:668,13:625,15:578,17:532,19:486,23:436,27:389,31:341,35:294};
+const GEO={};
+[[1,5,9,13,15,17,19,23,27,31,35],[2,6,10,14,16,18,20,24,28,32,36]].forEach((row,ri)=>row.forEach((t,ci)=>{
+  const top=[1,5,9,13,15,17,19,23,27,31,35][ci]; GEO[t]={x:COL[top],y:ri?136:86};}));
+[[3,7,11,21,25,29,33,37],[4,8,12,22,26,30,34,38]].forEach((row,ri)=>row.forEach((t,ci)=>{
+  const top=[1,5,9,19,23,27,31,35][ci]; GEO[t]={x:COL[top],y:ri?348:298};}));
+GEO[39]={x:251,y:111}; GEO[40]={x:251,y:323};
+const TBY={};
+DATA.tables.forEach(t=>{Object.assign(t,GEO[t.id]);TBY[t.id]=t;});
+const R_T=11.5, R_C=19.5, R_S=3.9;
+
+function seatPos(t,s){ // seat 1 = side away from the stage (left), clockwise
+  const a=(180+(s-1)*360/t.cap)*Math.PI/180; return [t.x+R_C*Math.cos(a), t.y+R_C*Math.sin(a)];
+}
+const seatNums=t=>Array.from({length:t.cap},(_,i)=>i+1);
+
+/* ===== Build SVG ===== */
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+const VB={x:20,y:22,w:900,h:560};
+function buildPlan(){
+  const svg=el('svg',{viewBox:`${VB.x} ${VB.y} ${VB.w} ${VB.h}`,role:'img','aria-label':'ผังห้องจัดเลี้ยง'});
+  // foyer + registration lobby
+  el('rect',{x:98,y:384,width:790,height:118,rx:6,class:'foyer'},svg);
+  el('rect',{x:30,y:430,width:250,height:142,rx:6,class:'foyer'},svg);
+  el('text',{x:445,y:405,'text-anchor':'middle',class:'lbl',style:'font-size:10px'},svg,'Foyer · โถงหน้าห้อง');
+  el('rect',{x:290,y:410,width:52,height:9,rx:2,fill:'#F4EBEC',stroke:'#E0CFD3'},svg);
+  el('text',{x:316,y:432,'text-anchor':'middle',class:'lbl',style:'font-size:8px'},svg,'Gallery');
+  el('rect',{x:485,y:474,width:120,height:14,rx:3,fill:'#F4EBEC',stroke:'#E0CFD3'},svg);
+  el('text',{x:545,y:467,'text-anchor':'middle',class:'lbl',style:'font-size:8.5px'},svg,'Backdrop');
+  el('rect',{x:672,y:474,width:46,height:14,rx:3,fill:'#F4EBEC',stroke:'#E0CFD3'},svg);
+  el('text',{x:695,y:467,'text-anchor':'middle',class:'lbl',style:'font-size:8.5px'},svg,'Photo Booth');
+  // registration (terra)
+  el('rect',{x:60,y:470,width:150,height:22,rx:4,class:'here'},svg);
+  el('text',{x:135,y:485,'text-anchor':'middle',class:'lbl',style:'font-size:9.5px;fill:#fff;letter-spacing:.14em'},svg,'Registration');
+  el('text',{x:135,y:510,'text-anchor':'middle',class:'lbl-th',style:'font-size:11px;fill:#C8734A'},svg,'จุดลงทะเบียน');
+  el('text',{x:135,y:556,'text-anchor':'middle',class:'lbl',style:'font-size:8.5px'},svg,'Lift lobby · ลิฟต์');
+  // path from registration to ballroom doors
+  el('path',{d:'M210 481 C 300 481, 330 452, 400 452 L 640 452',fill:'none',stroke:'#C8734A','stroke-width':1.6,'stroke-dasharray':'5 4'},svg);
+  [[260,386],[440,386],[640,386]].forEach(([x,y])=>el('path',{d:`M${x-8} ${y+12} l8 -12 l8 12 z`,fill:'#C8734A'},svg));
+  el('text',{x:440,y:376,'text-anchor':'middle',class:'lbl-th',style:'font-size:9.5px;fill:#C8734A'},svg,'ประตูเข้าห้องจัดเลี้ยง');
+  // ballroom
+  el('rect',{x:98,y:40,width:790,height:344,rx:6,class:'room'},svg);
+  // screens / LED top wall
+  [[118,40,'Screen'],[331,40,'LED'],[548,40,'Screen'],[704,40,'LED']].forEach(([x,y,n])=>{
+    el('rect',{x,y:y-3,width:72,height:5,rx:2,fill:n==='LED'?'#B9C9DD':'#CFE3DC'},svg);});
+  // stage, band, LED wall
+  el('rect',{x:822,y:118,width:52,height:34,rx:4,fill:'#F4EBEC',stroke:'#E0CFD3'},svg);
+  el('text',{x:848,y:139,'text-anchor':'middle',class:'lbl',style:'font-size:8.5px'},svg,'Band');
+  el('rect',{x:822,y:156,width:52,height:118,rx:4,fill:'#E9D7DA',stroke:'#CDB0B7'},svg);
+  el('text',{x:853,y:215,'text-anchor':'middle',class:'lbl',style:'font-size:13px;fill:#5C4148',transform:'rotate(90 853 215)'},svg,'MAIN STAGE');
+  el('text',{x:838,y:215,'text-anchor':'middle',class:'lbl-th',style:'font-size:10px',transform:'rotate(90 838 215)'},svg,'เวที');
+  el('rect',{x:881,y:110,width:4,height:172,rx:2,fill:'#B9C9DD'},svg);
+  // cake, bars
+  el('rect',{x:562,y:236,width:32,height:26,rx:4,fill:'#F7E6DA',stroke:'#E3C2AA'},svg);
+  el('text',{x:578,y:275,'text-anchor':'middle',class:'lbl',style:'font-size:8.5px'},svg,'Wedding Cake');
+  el('rect',{x:150,y:126,width:14,height:44,rx:3,fill:'#EFE4E6',stroke:'#D8C6CA'},svg);
+  el('text',{x:157,y:116,'text-anchor':'middle',class:'lbl',style:'font-size:9.5px'},svg,'Bar');
+  el('rect',{x:593,y:362,width:28,height:12,rx:3,fill:'#EFE4E6',stroke:'#D8C6CA'},svg);
+  el('text',{x:607,y:356,'text-anchor':'middle',class:'lbl',style:'font-size:9px'},svg,'Bar');
+
+  const taken=new Set();DATA.guests.forEach(g=>g.seats.forEach(s=>taken.add(g.table+'-'+s)));
+  const kids=new Set();DATA.guests.filter(g=>g.kid).forEach(g=>g.seats.forEach(s=>kids.add(g.table+'-'+s)));
+  DATA.tables.forEach(t=>{
+    const g=el('g',{class:'tg','data-t':t.id},svg);
+    el('circle',{cx:t.x,cy:t.y,r:R_T,class:'tb'},g);
+    el('circle',{cx:t.x,cy:t.y,r:R_C+R_S+5,class:'ring',style:'display:none'},g);
+    el('text',{x:t.x,y:t.y+.5,class:'tb-name in',style:'font-size:9.5px'},g,t.id);
+    for(const s of seatNums(t)){const[x,y]=seatPos(t,s);const k=t.id+'-'+s;
+      el('circle',{cx:x,cy:y,r:R_S,class:'ch'+(taken.has(k)?' taken':'')+(kids.has(k)?' kid':'')},g);}
+  });
+  el('g',{id:'me'},svg);
+  return svg;
+}
+const svg=buildPlan();
+document.getElementById('plan-scroll').appendChild(svg);
+
+/* ===== Helpers ===== */
+const TITLES=/^(คุณ|k\.|khun|ดร\.|นพ\.|รศ\.ดร\.|อ\.|พี่|น้อง|น้า|ป้า|ลุง|อาม่า)/;
+const norm=s=>String(s).toLowerCase().replace(/[\s\-–&+().,'_]/g,'').replace(/คุณ/g,'');
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function seatText(seats){
+  if(!seats.length) return '';
+  const s=[...seats].sort((a,b)=>a-b);
+  if(s.length>1 && s[s.length-1]-s[0]===s.length-1) return s[0]+'–'+s[s.length-1];
+  return s.join(', ');
+}
+function where(t){
+  const side = t.y<240 ? 'ฝั่งบาร์เค้ก/จอด้านบน' : 'ฝั่งประตูทางเข้า';
+  const near = t.x>=600 ? 'ใกล้เวที' : t.x>=420 ? 'กลางห้อง' : 'ท้ายห้อง (ฝั่งตรงข้ามเวที)';
+  return near;
+}
+
+/* ===== Search ===== */
+const q=document.getElementById('q'),list=document.getElementById('matches'),empty=document.getElementById('empty'),more=document.getElementById('more'),
+      result=document.getElementById('result'),clearBtn=document.getElementById('clear'),hint=document.getElementById('hint');
+DATA.guests.forEach(g=>g._n=norm(g.name));
+q.addEventListener('input',()=>{
+  const raw=q.value.trim(), v=norm(raw); clearBtn.style.display=raw?'block':'none';
+  list.innerHTML='';empty.style.display='none';more.style.display='none';
+  if(!v){result.style.display='none';hint.style.display='block';return;}
+  hint.style.display='none';
+  const hits=DATA.guests.filter(g=>g._n.includes(v));
+  if(!hits.length){empty.style.display='block';result.style.display='none';return;}
+  if(hits.length===1){show(hits[0]);return;}
+  result.style.display='none';
+  hits.slice(0,20).forEach(g=>{
+    const t=TBY[g.table];
+    const li=document.createElement('li'),b=document.createElement('button');
+    b.innerHTML=`<span>${esc(g.name)}${g.kid?' <em class="kid-tag">เด็ก</em>':''}<span class="sub">${esc(t.name)}</span></span><span class="tag">โต๊ะ ${esc(g.table)}</span>`;
+    b.onclick=()=>{list.innerHTML='';more.style.display='none';show(g);};
+    li.appendChild(b);list.appendChild(li);
+  });
+  if(hits.length>20){more.style.display='block';more.textContent=`พบ ${hits.length} รายชื่อ ลองพิมพ์ให้ละเอียดขึ้นอีกนิดนะคะ`;}
+});
+clearBtn.onclick=()=>{q.value='';q.dispatchEvent(new Event('input'));q.focus();};
+
+function show(g){
+  const t=TBY[g.table];
+  document.getElementById('r-name').innerHTML=esc(g.name)+(g.kid?' <em class="kid-tag">เด็ก</em>':'');
+  document.getElementById('r-table').textContent=g.table;
+  document.getElementById('r-tname').textContent='โต๊ะกลม'+(t.name&&t.name!=='—'?' · '+t.name:'');
+  const sc=document.getElementById('r-seat-chip'), st=seatText(g.seats);
+  if(st){sc.style.display='';document.getElementById('r-seat').textContent=st;document.getElementById('r-seat').style.fontSize=st.length>4?'26px':'';}else sc.style.display='none';
+  document.getElementById('r-desc').textContent = g.seats.length
+    ? `โต๊ะอยู่${where(t)} · เก้าอี้หมายเลข ${st} (เลข 1 อยู่ฝั่งตรงข้ามเวที นับวนตามเข็มนาฬิกา)`
+    : 'ยังไม่ได้ระบุเลขที่นั่ง ทีมงานจะพาไปที่นั่งหน้างานค่ะ';
+  const note=document.getElementById('r-note');
+  if(STAFF&&g.note){note.style.display='block';note.textContent='สำหรับทีมงาน · '+g.note;}else note.style.display='none';
+  svg.querySelectorAll('.tg').forEach(n=>{const on=n.dataset.t===g.table;n.classList.toggle('hl',on);n.classList.toggle('dim',!on);n.querySelector('.ring').style.display=on?'':'none';});
+  const me=svg.getElementById('me');me.innerHTML='';
+  g.seats.forEach(s=>{const[x,y]=seatPos(t,s);el('circle',{cx:x,cy:y,r:R_S+1,class:'pulse'},me);el('circle',{cx:x,cy:y,r:R_S+1.6,class:'me-seat'},me);});
+  const mates=document.getElementById('mates');mates.innerHTML='';
+  const bySeat={};DATA.guests.filter(x=>x.table===g.table).forEach(x=>x.seats.forEach(s=>bySeat[s]=x));
+  const res={};DATA.reserved.filter(r=>r.table===g.table).forEach(r=>res[r.seat]=r.label);
+  document.getElementById('r-count').textContent=`${Object.keys(bySeat).length} / ${t.cap} ที่นั่ง`;
+  for(const s of seatNums(t)){
+    const x=bySeat[s],li=document.createElement('li');
+    if(x){ if(x===g) li.className='me'; li.innerHTML=`<b>${s}</b><span>${esc(x.name)}${x.kid?' <em class="kid-tag">เด็ก</em>':''}${STAFF&&x.note&&x!==g?' <small>· '+esc(x.note)+'</small>':''}</span>`; }
+    else { li.className='vacant'; li.innerHTML=`<b style="background:#E8DADD">${s}</b><span>${esc(res[s]||'ว่าง')}</span>`; }
+    mates.appendChild(li);
+  }
+  setTab('plan');
+  result.style.display='block';
+  requestAnimationFrame(()=>{const sp=document.getElementById('plan-scroll');const ratio=sp.scrollWidth/VB.w;sp.scrollTo({left:Math.max(0,(t.x-VB.x)*ratio-sp.clientWidth/2),behavior:'smooth'});
+    result.scrollIntoView({behavior:'smooth',block:'start'});});
+  q.blur();
+}
+function setTab(name){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.tab===name));
+  document.getElementById('tab-plan').style.display=name==='plan'?'':'none';document.getElementById('tab-mates').style.display=name==='mates'?'':'none';}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+</script>
+</body>
+</html>
