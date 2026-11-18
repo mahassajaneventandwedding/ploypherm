@@ -120,6 +120,7 @@ section{padding:64px 0}
 .mates li.me b{background:#fff;color:var(--plum)}
 .mates li.vacant{color:#C2B4B7;border-style:dashed}
 
+/*PLANCSS-START*/
 /* SVG plan */
 .room{fill:#fff;stroke:#CDBDC1;stroke-width:2}
 .foyer{fill:#FAF5F3;stroke:#DCCDD0;stroke-width:1.4}
@@ -141,6 +142,41 @@ section{padding:64px 0}
 @keyframes pulse{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
 .here{fill:var(--terra)}
 
+/*PLANCSS-END*/
+.tg.pick .tb{fill:var(--mauve-deep);stroke:var(--mauve-deep)}
+.tg.pick .tb-name.in{fill:#fff}
+.ov .tg{cursor:pointer}
+/* overview */
+.overview{margin-top:40px;text-align:center}
+.overview .ov-head .eyebrow{color:var(--mauve-deep)}
+.overview .ov-head h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:var(--plum);line-height:1.2;margin-top:4px}
+.overview .ov-head p{font-size:13.5px;color:var(--muted);margin:6px 0 16px}
+.ov-frame{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:0 14px 40px rgba(156,120,128,.10)}
+.ov-frame .plan-scroll{border:0;background:linear-gradient(180deg,#FDFBFA,#F8F1F1)}
+.tlist{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-top:14px;text-align:left}
+.tlist button{width:100%;display:flex;gap:9px;align-items:center;background:var(--ivory);border:1px solid var(--line);border-radius:12px;padding:7px 10px;font-family:'Prompt';font-weight:300;font-size:13px;color:var(--ink);cursor:pointer;text-align:left;line-height:1.35}
+.tlist button b{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--mauve);color:#fff;font-family:'Josefin Sans';font-weight:400;font-size:12px}
+.tlist button.on{background:var(--plum);color:#fff;border-color:var(--plum)}
+.tlist button.on b{background:#fff;color:var(--plum)}
+.tpanel{display:none;margin-top:14px;background:var(--blush);border-radius:18px;padding:16px;text-align:left;animation:rise .3s ease}
+.tpanel h4{font-weight:400;font-size:17px;color:var(--plum);margin-bottom:10px}
+.tpanel h4 small{font-size:12.5px;color:var(--muted);margin-left:6px}
+.dl-btn{display:inline-flex;align-items:center;gap:10px;margin-top:20px;background:var(--plum);color:#fff;text-decoration:none;padding:13px 26px;border-radius:999px;font-size:14.5px;font-weight:400;box-shadow:0 8px 24px rgba(92,65,72,.22)}
+.dl-btn svg{width:16px;height:16px}
+.dl-note{font-size:12px;color:var(--muted);margin-top:8px}
+/* spinning footer logo */
+.spin-logo{width:150px;height:150px;margin:0 auto;position:relative;perspective:700px;display:grid;place-items:center}
+.spin-logo .orbit{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,.5);animation:turn 14s linear infinite}
+.spin-logo .orbit::after{content:"";position:absolute;top:-4px;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:#fff;box-shadow:0 0 12px 2px rgba(255,255,255,.9)}
+.spin-logo .orbit.o2{inset:13px;border:1px dashed rgba(255,255,255,.35);animation-duration:22s;animation-direction:reverse}
+.spin-logo .orbit.o2::after{width:5px;height:5px;margin-left:-2.5px;top:-3px}
+.spin-logo .glow{position:absolute;inset:30px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.35),transparent 70%);animation:breathe 3s ease-in-out infinite}
+.spin-logo img{position:relative;width:80px;animation:spinY 5s cubic-bezier(.55,.05,.45,.95) infinite;filter:drop-shadow(0 6px 16px rgba(92,65,72,.35))}
+@keyframes spinY{0%{transform:rotateY(0)}100%{transform:rotateY(360deg)}}
+@keyframes turn{to{transform:rotate(360deg)}}
+@keyframes breathe{0%,100%{opacity:.5;transform:scale(.9)}50%{opacity:1;transform:scale(1.08)}}
+footer img.wm{width:min(300px,70vw);margin:22px auto 0}
+@media (prefers-reduced-motion:reduce){.spin-logo *{animation:none!important}}
 /* welcome / invitation */
 .invite{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .mono{padding:38px 20px 8px;text-align:center}
@@ -304,6 +340,25 @@ footer p{font-size:12.5px;opacity:.9;margin-top:16px;line-height:1.7}
         <ul class="mates" id="mates"></ul>
       </div>
     </div>
+
+    <div class="overview" id="overview">
+      <div class="ov-head">
+        <div class="eyebrow">Seating Plan</div>
+        <h3>ผังห้องจัดเลี้ยง</h3>
+        <p>แตะที่โต๊ะหรือชื่อโต๊ะ เพื่อดูว่าใครนั่งโต๊ะไหน</p>
+      </div>
+      <div class="ov-frame">
+        <div class="plan-scroll ov" id="ov-scroll"></div>
+        <div class="plan-hint">เลื่อนซ้าย–ขวาเพื่อดูผังทั้งห้อง · เวทีอยู่ฝั่งขวา</div>
+        <div class="tpanel" id="tpanel"><h4 id="tp-h"></h4><ul class="mates" id="tp-list"></ul></div>
+        <ul class="tlist" id="tlist"></ul>
+      </div>
+      <a class="dl-btn" href="ploypherm-seating-plan.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+        ดาวน์โหลดผังโต๊ะ (PDF)
+      </a>
+      <div class="dl-note">Seating Plan artwork · ผังห้องพร้อมรายชื่อทุกโต๊ะ</div>
+    </div>
   </div>
 </section>
 
@@ -391,7 +446,8 @@ footer p{font-size:12.5px;opacity:.9;margin-top:16px;line-height:1.7}
 </section>
 
 <footer>
-  <img class="logo" src="img/logo-white.png" alt="Mahassajan">
+  <div class="spin-logo" aria-hidden="true"><div class="glow"></div><div class="orbit"></div><div class="orbit o2"></div><img src="img/heart-white.png" alt=""></div>
+  <img class="wm" src="img/wordmark-white.png" alt="Mahassajan">
   <img class="tl2" src="img/tagline-white.png" alt="Wedding Planner">
   <div class="help">
     <b>Need assistance? · ต้องการความช่วยเหลือ?</b>
@@ -465,6 +521,7 @@ const DATA = JSON.parse(document.getElementById('seat-data').textContent);
 const STAFF = location.hash==='#staff';
 window.addEventListener('hashchange',()=>location.reload());
 
+/*PLANJS-START*/
 /* ===== Room geometry: The Ritz-Carlton Bangkok ballroom (from hotel floor plan) — 40 round tables, stage on the right ===== */
 const COL={1:762,5:715,9:668,13:625,15:578,17:532,19:486,23:436,27:389,31:341,35:294};
 const GEO={};
@@ -537,11 +594,34 @@ function buildPlan(){
     for(const s of seatNums(t)){const[x,y]=seatPos(t,s);const k=t.id+'-'+s;
       el('circle',{cx:x,cy:y,r:R_S,class:'ch'+(taken.has(k)?' taken':'')+(kids.has(k)?' kid':'')},g);}
   });
-  el('g',{id:'me'},svg);
+  el('g',{class:'me-layer'},svg);
   return svg;
 }
+/*PLANJS-END*/
 const svg=buildPlan();
 document.getElementById('plan-scroll').appendChild(svg);
+
+/* ===== Overview plan (under the search box) ===== */
+const ov=buildPlan(); document.getElementById('ov-scroll').appendChild(ov);
+const tlist=document.getElementById('tlist');
+DATA.tables.forEach(t=>{const li=document.createElement('li');li.innerHTML=`<button data-t="${t.id}"><b>${t.id}</b><span>${esc(t.name)}</span></button>`;tlist.appendChild(li);});
+function pickTable(id,scroll){
+  const t=TBY[id];
+  ov.querySelectorAll('.tg').forEach(n=>n.classList.toggle('pick',n.dataset.t===id));
+  tlist.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.t===id));
+  const bySeat={};DATA.guests.filter(x=>x.table===id).forEach(x=>x.seats.forEach(s=>bySeat[s]=x));
+  document.getElementById('tp-h').innerHTML=`โต๊ะ ${id} · ${esc(t.name)}<small>${Object.keys(bySeat).length} / ${t.cap} ที่นั่ง</small>`;
+  const ul=document.getElementById('tp-list');ul.innerHTML='';
+  for(const s of seatNums(t)){const x=bySeat[s],li=document.createElement('li');
+    if(x) li.innerHTML=`<b>${s}</b><span>${esc(x.name)}${x.kid?' <em class="kid-tag">เด็ก</em>':''}</span>`;
+    else {li.className='vacant';li.innerHTML=`<b style="background:#E8DADD">${s}</b><span>ว่าง</span>`;}
+    ul.appendChild(li);}
+  const p=document.getElementById('tpanel');p.style.display='block';
+  const sp=document.getElementById('ov-scroll');const ratio=sp.scrollWidth/VB.w;sp.scrollTo({left:Math.max(0,(t.x-VB.x)*ratio-sp.clientWidth/2),behavior:'smooth'});
+  if(scroll) p.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+ov.querySelectorAll('.tg').forEach(n=>n.addEventListener('click',()=>pickTable(n.dataset.t,true)));
+tlist.addEventListener('click',e=>{const b=e.target.closest('button');if(b)pickTable(b.dataset.t,true);});
 
 /* ===== Helpers ===== */
 const TITLES=/^(คุณ|k\.|khun|ดร\.|นพ\.|รศ\.ดร\.|อ\.|พี่|น้อง|น้า|ป้า|ลุง|อาม่า)/;
@@ -596,7 +676,7 @@ function show(g){
   const note=document.getElementById('r-note');
   if(STAFF&&g.note){note.style.display='block';note.textContent='สำหรับทีมงาน · '+g.note;}else note.style.display='none';
   svg.querySelectorAll('.tg').forEach(n=>{const on=n.dataset.t===g.table;n.classList.toggle('hl',on);n.classList.toggle('dim',!on);n.querySelector('.ring').style.display=on?'':'none';});
-  const me=svg.getElementById('me');me.innerHTML='';
+  const me=svg.querySelector('.me-layer');me.innerHTML='';
   g.seats.forEach(s=>{const[x,y]=seatPos(t,s);el('circle',{cx:x,cy:y,r:R_S+1,class:'pulse'},me);el('circle',{cx:x,cy:y,r:R_S+1.6,class:'me-seat'},me);});
   const mates=document.getElementById('mates');mates.innerHTML='';
   const bySeat={};DATA.guests.filter(x=>x.table===g.table).forEach(x=>x.seats.forEach(s=>bySeat[s]=x));
